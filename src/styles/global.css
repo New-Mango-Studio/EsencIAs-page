@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('/fonts/Press_Start_2P/PressStart2P-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.solarpunk-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #b6fcd5 0%, #e0ffe7 100%);
+    image-rendering: pixelated;
+    font-family: 'Press Start 2P';
+    color: #2d3a1a;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 8px solid #7fdc8c;
+    border-radius: 24px;
+    box-shadow: 0 0 32px #aaffc3, 0 0 0 8px #e0ffe7 inset;
+}
+
+.pixel-header {
+    text-align: center;
+    padding: 2.5em 1em 1.5em 1em;
+    background: repeating-linear-gradient(90deg, #e0ffe7 0 8px, #b6fcd5 8px 16px);
+    border-bottom: 4px solid #7fdc8c;
+    position: relative;
+}
+
+.pixel-sun {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+    margin-bottom: -1em;
+    filter: drop-shadow(0 0 8px #ffe066);
+}
+
+.pixel-title {
+    font-size: 2.2em;
+    letter-spacing: 2px;
+    color: #3e6b2f;
+    text-shadow: 2px 2px 0 #fffbe7, 4px 4px 0 #7fdc8c;
+    font-family: 'Press Start 2P';
+}
+
+.pixel-desc {
+    font-size: 1.1em;
+    margin: 1em auto 0 auto;
+    max-width: 600px;
+    background: #fffbe7cc;
+    border: 2px dashed #7fdc8c;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 2px 0 #7fdc8c;
+}
+
+.pixel-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+    padding: 2em 1em 3em 1em;
+}
+
+.pixel-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.pixel-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #7fdc8c;
+    border-radius: 8px;
+    background: #fffbe7;
+    color: #3e6b2f;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.pixel-btn:hover {
+    background: #b6fcd5;
+    transform: scale(1.05);
+}
+
+.pixel-discord svg {
+    fill: #5865F2;
+}
+
+.pixel-github svg {
+    fill: #222;
+}
+
+.pixel-section {
+    background: repeating-linear-gradient(45deg, #e0ffe7 0 8px, #b6fcd5 8px 16px);
+    border: 3px solid #7fdc8c;
+    border-radius: 12px;
+    box-shadow: 0 2px 0 #7fdc8c;
+    padding: 2em 2em 2em 3.5em;
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    font-size: 1.1em;
+    min-width: 320px;
+    max-width: 700px;
+}
+
+.pixel-esencia {
+    border-color: #aaffc3;
+    background: repeating-linear-gradient(135deg, #fffbe7 0 8px, #b6fcd5 8px 16px);
+}
+
+.esencia-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.esencia-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.esencia-info li {
+    margin-bottom: 0.5em;
+    background: #e0ffe7;
+    border-left: 4px solid #7fdc8c;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+.esencia-art {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1em;
+}
+
+.esencia-art img {
+    width: 48px;
+    height: 48px;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 0 4px #ffe066);
+}
+
+.pixel-plant {
+    position: absolute;
+    left: -48px;
+    top: 24px;
+    width: 40px;
+    height: 40px;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 0 4px #7fdc8c);
+}
+
+.pixel-donaciones {
+    border-color: #ffe066;
+    background: repeating-linear-gradient(135deg, #fffbe7 0 8px, #fff1ba 8px 16px);
+    text-align: center;
+}
+
+.donate-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 1.5em 0 1em 0;
+}
+
+.pixel-donate {
+    border-color: #ffe066;
+    background: #fffbe7;
+    color: #b8860b;
+}
+
+.pixel-donate:hover {
+    background: #ffe066;
+    color: #fffbe7;
+}
+
+.donate-thanks {
+    font-size: 1em;
+    color: #3e6b2f;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .pixel-section {
+        padding: 1.2em 0.7em 1.2em 0.7em;
+        font-size: 1.05em;
+        max-width: 98vw;
+        min-width: 0;
+    }
+
+    .pixel-main {
+        padding: 1em 0.2em 2em 0.2em;
+        gap: 1.5em;
+    }
+
+    .solarpunk-bg {
+        border-width: 4px;
+        border-radius: 12px;
+        padding: 0.5em 0 0.5em 0;
+    }
+
+    .pixel-title {
+        font-size: 1.2em;
+    }
+}
